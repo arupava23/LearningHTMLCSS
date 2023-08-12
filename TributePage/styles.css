@@ -1,0 +1,62 @@
+#main{
+    background-color: #869581b5;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(97, 31, 31, 0.986);
+}
+
+#img-div{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(97, 31, 31, 0.986);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-caption{
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#title {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(97, 31, 31, 0.986);
+}
+
+#tribute-info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+
+#tribute-info li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #869581b5;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(97, 31, 31, 0.986);
+}

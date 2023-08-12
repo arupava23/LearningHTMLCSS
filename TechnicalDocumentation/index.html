@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<main id="main-doc">
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <div id="line-break"></div>
+        <div class="nav-item"><a href="#introduction" class="nav-link">Introduction</a></div>
+        <div id="line-break"></div>
+        <div id="nav-item"><a href="#hello_world" class="nav-link">Hello World</a></div>
+        <div id="line-break"></div>
+        <div class="nav-item"><a href="#data_types" class="nav-link">Data Types</a></div>
+        <div id="line-break"></div>
+        <div class="nav-item"><a href="#variables" class="nav-link">Variables</a></div>
+        <div id="line-break"></div>
+        <div class="nav-item"><a href="#operators" class="nav-link">Operators</a></div>
+        <div id="line-break"></div>
+    </nav>
+    
+    <div class="content">
+    <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>Python is a high-level, interpreted programming language that has gained immense popularity in recent years. It was created in the late 1980s by Guido van Rossum and is named after the British comedy group Monty Python. Python is known for its simple, easy-to-read syntax, which emphasizes readability and reduces the cost of program maintenance.</p>
+        <p>Python supports multiple programming paradigms, including object-oriented, procedural, and functional programming, making it a versatile language suitable for a wide range of applications. Python is also known for its extensive libraries and frameworks that provide powerful and efficient tools for tasks such as data analysis, web development, scientific computing, and artificial intelligence.</p>
+        <ul>
+            <li><p><span class="topic-list">Data analysis:</span> 
+                Python is a top choice for data analysis due to its powerful libraries and tools. Pandas is a popular library that enables easy manipulation and analysis of data from different sources. NumPy provides support for numerical operations and arrays, while Matplotlib and Seaborn allow for visualization of data. Python's ecosystem of libraries makes it an efficient language for analyzing large datasets and deriving insights. </p></li>
+            <li><p><span class="topic-list">Artificial Intelligence:</span> 
+                Python is a popular choice for artificial intelligence (AI) due to its simple syntax, efficient libraries such as TensorFlow and PyTorch, and active community. These features make it easier for developers to build and train AI models, process and analyze data, and quickly solve problems.</p></li>
+            <li><p><span class="topic-list">Software Development:</span> 
+                Python's readability, extensive library ecosystem, cross-platform compatibility, and ease of integration with other languages make it a popular choice for software development. Its use of web frameworks, data processing and analysis tools, and GUI frameworks help developers create complex applications quickly and efficiently.</p></li>
+        </ul>
+    </section>
+    
+    <section class="main-section" id="hello_world">
+        <header>Hello World</header>
+        <p>To get started with your first Python program, copy the code below and run it in your terminal.</p>
+        <pre><code class="language-python">print("Hello World!")</code></pre>
+        <p>After running the code, you should see the following output:</p>
+        <pre><code class="language-python">Hello World!</code></pre>
+    </section>
+    
+    <section class="main-section" id="data_types">
+        <header>Data Types</header>
+        <p>
+            Data types are essential in programming because they define the type of data that a variable or expression can hold, and the operations that can be performed on that data. By using data types, programmers can ensure that their programs work correctly and efficiently, and can prevent errors that might occur if data is used inappropriately or incorrectly.</p>
+        <p>There are several data types in Python that are meant to store different types of information, whether it be the price of a donut or the the flavors of licorice.</p>
+        <ul>
+            <li><p><span class="topic-list">Numbers:</span> 
+                Python supports integers, floating-point numbers, and complex numbers. Integers are whole numbers, while floating-point numbers are numbers with a decimal point. Complex numbers are numbers with a real and imaginary part. </p></li>
+            <li><p><span class="topic-list">Strings:</span> 
+                Strings are sequences of characters enclosed in single or double quotes. Python strings are immutable, meaning they cannot be changed after they are created. </p></li>
+            <li><p><span class="topic-list">Booleans:</span> 
+                Booleans are values that are either true or false. They are often used in conditional statements and loops. </p></li>
+        </ul>
+    </section>
+    
+    <section class="main-section" id="variables">
+        <header>Variables</header>
+        <p>In programming, a variable is a named storage location in the computer's memory that holds a value or data. Variables are used to store data that a program can access and manipulate during its execution.</p>
+        <p>A variable has a name, a data type, and a value. The name is used to identify the variable and access its data, while the data type defines the kind of data that the variable can hold, such as integer, float, string, or boolean. The value is the actual data stored in the variable.</p>
+        <p>Variables are an essential part of programming because they allow programs to store and manipulate data dynamically. By using variables, programmers can create flexible and adaptable programs that can perform different operations on different sets of data. For example, a variable could hold the user's input, the result of a calculation, or the contents of a file.</p>
+        <h3 class="subsection-header">Creating a Variable</h3>
+        <p>Let's practice creating a variable. To create a variable in Python, you simply need to choose a name for the variable and assign a value to it using the equals sign (=). Here's an example:</p>
+        <pre><code class="language-python">x = 5</code></pre>
+        <p>The rules for creating a variable name is that there can only be numbers, letters, and underscores, and the variable name must start with a letter or underscore. There can be NO spaces!</p>
+        <p>We can assign any data type to a variable, for example:</p>
+        <pre><code class="language-python">age = 5
+_greeting = "Hello World!"
+isAvailable = True
+        </code></pre>
+        <p>Typically, we follow the camelCase format, where the first word of the variable is lowercase, and then the first letter of subsequent words is capitalized.</p>
+
+        <h3 class="subsection-header">Using a Variable</h3>
+        <p>Now that we've created a variable, let's use it in a program. We can use the variable in a print statement to display its value:</p>
+        <pre><code class="language-python">x = 5
+print(x)</code></pre>
+        <p>When we run the program, we should see the following output:</p>
+        <pre><code class="language-python">5</code></pre>
+        <p>We can also use the variable in an expression:</p>
+        <pre><code class="language-python">x = 5
+y = 10
+print(x*y)</code></pre>
+        <p>When we run the program, we should see the following output:</p>
+        <pre><code class="language-python">50</code></pre>
+        <p>As you can see, variables are a powerful tool that allow us to store and manipulate data in our programs. By using variables, we can create flexible and adaptable programs that can perform different operations on different sets of data.</p>
+    </section>
+    
+    <section class="main-section" id="operators">
+        <header>Operators</header>
+        <p>We can use operators to perform various operations, ranging from addition to comparison.</p>
+        <h3 class="subsection-header">Arithmetic Operators</h3>
+        <p>Arithmetic operators are used to perform mathematical operations on numbers. The following table lists the arithmetic operators in Python:</p>
+        <p>Let's practice using arithmetic operators. We can use arithmetic operators to perform mathematical operations on numbers. For example, we can use the addition operator (+) to add two numbers:</p>
+        <pre><code class="language-python"> x = 5 + 10;</code></pre>
+    </section>
+
+   </div>
+    
+</main>
+</html>
+

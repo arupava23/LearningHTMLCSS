@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <h1 id="title">Career Survey</h1>
+        <p id="description">What are your future plans?</p>
+    </header> 
+    <div id="container">
+    <main>
+        <form id="survey-form">
+            <fieldset id="base-info">
+                <label for="name" id="name-label" >Name: <input id="name" type="text" name="name" placeholder="Enter your name" required></label>
+                <label for="email" id="email-label" >Email: <input id="email" type="email" name="email" placeholder="Enter your email" required /></label> 
+                <label for="number" id="number-label" >ID: <input id="number" type="number" name="number" placeholder="Enter your ID" required min=0000 max=9999 /></label>
+            </fieldset>
+            <fieldset id="current-situation">
+                <label for="dropdown">What Is Your Current Situation?
+                    <select id="dropdown" required>
+                        <option value="">(Select One)</option>
+                        <option value=1>Curently Working</option>
+                        <option value=2>Seeking Employment</option>
+                        <option value=3>Pursuing Education</option>
+                        <option value=4>Other</option>
+                    </select>
+                </label>
+                <label> <p id="how-much-experience">How Many Years of Work Experience Do You Have?</p>
+                     <div class="experience-label"><label for="no-experience" ></label><input type="radio" value="no-experience" name="experience" checked>No Work Experience</label> </div> 
+                     <div class="experience-label"><label for="one-to-two-years" ><input type="radio" value="one-to-two-years" name="experience">One To Two Years</label> </div>
+                     <div class="experience-label"><label for="three-to-five-years" ><input type="radio" value="three-to-five-years" name="experience">Three To Five Years</label> </div>
+                      <div class="experience-label"><label for="five-plus-years" ><input type="radio" value="five-plus-years" name="experience">Five Plus Years</label> </div>            
+                </label>
+            </fieldset>
+            <fieldset>
+                <label id="field">What Fields Are You Interested In? 
+                    <label for="medicine"><input type="checkbox" value="medicine" id="medicine" name="field">Medicine</label>
+                    <label for="engineering"><input type="checkbox" value="engineering" id="engineering" name="field">Engineering</label>
+                    <label for="manual-labor"><input type="checkbox" value="manual-labor" id="manual-labor" name="field">Manual Labor</label>
+                    <label for="author"><input type="checkbox" value="author" id="author" name="field">Author</label>
+                    <label for="stay-at-home"><input type="checkbox" value="stay-at-home" id="stay-at-home" name="field">Stay-At-Home Parent</label>
+                    <label for="none"><input type="checkbox" value="none" id="none" name="field">None</label>
+                    <label for="other-field"><input type="checkbox" value="other-field" id="other-field" name="field">Other:  <input type="text" name="other-field" id="other-field" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Leave Any Additional Comments Below:
+                    <textarea id="comments"></textarea>
+                </label>
+            </fieldset>
+         <input id ="submit" type="submit" value="Submit" />
+        </form>
+    </main>
+    </div>
+    </body>
+  </html>
